@@ -13,8 +13,8 @@
 
 #define max(a,b) (a>b)?a:b
 
-typedef char lhs;
-typedef char rhs[MAX_FANOUT];
+typedef char lhs; // lhs is a single char
+typedef char rhs[MAX_FANOUT]; // rhs is a unitialized C String of size MAX_FANOUT
 /*
 * @brief production struct where LHS is a non-terminal and RHS is string over set of terminals and non-terminals
 */
