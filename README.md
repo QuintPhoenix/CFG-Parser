@@ -30,6 +30,10 @@ to discuss what you would like to change.
 
 A very limited number of CFGs have been tested till now. Hence, the programme is highly susceptible to crashing or reporting incorred result.
 
+## Limitations
+
+Terminals should be any lowercase character except 'e' as it is reserved for empty strings. Non-terminals should be any uppercase character.
+
 ## TODO
 
 - [ ] Add threading functionality to speedup the programme

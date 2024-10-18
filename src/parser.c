@@ -357,7 +357,7 @@ int main(void){
     qsort((void*)productions,production_count,sizeof(productions[0]),comp); // sort the productions acc. to their LHS. This will help when searching for production based on their LHS
 
     char input_str[MAX_STRING_SIZE];
-    printf("Enter input string - ");
+    printf("Enter input string (if the input string is empty, please enter \"e\") - ");
     scanf("%s",&input_str);
     if(strcmp(input_str,"e") == 0) input_str[0] = '\0';
     int input_len = strlen(input_str);
@@ -369,7 +369,26 @@ int main(void){
             exit(EXIT_FAILURE);
         }
     }
-
+    if(strlen(input_str) == 0) {
+        int index = get_production_index(starting_non_terminal,productions,production_count);
+        if(strcmp(productions[index].RHS,"e") == 0)
+        {
+            printf("ACCEPTED\n");
+            return 0;
+        }
+        else {
+            while(index < production_count-1 && productions[index+1].LHS == productions[index].LHS)
+            {
+                index++;
+                if(strcmp(productions[index].RHS,"e") == 0)
+                {
+                    printf("ACCEPTED\n");
+                    return 0;
+                }
+            }
+        }
+        printf("REJECTED\n");
+    }
     stack st;
     initialize_stack(&st,fanout*strlen(input_str));
     push(&st,starting_non_terminal);
