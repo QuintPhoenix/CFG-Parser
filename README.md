@@ -40,3 +40,4 @@ Terminals should be any lowercase character except 'e' as it is reserved for emp
 - [ ] Make source code more readable
 - [ ] Add feature to print the derivation
 - [ ] Add feature to accept a string as terminal or non-terminal
+- [ ] Add hashing to search for productions rather than using binary search
