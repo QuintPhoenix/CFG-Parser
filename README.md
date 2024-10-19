@@ -32,7 +32,7 @@ A very limited number of CFGs have been tested till now. Hence, the programme is
 
 ## Limitations
 
-Terminals should be any lowercase character except 'e' as it is reserved for empty strings. Non-terminals should be any uppercase character.
+Terminals should be any lowercase character except 'e' as it is reserved for empty strings. Non-terminals should be any uppercase character. Also the productions should be in form of A->X, where A is a single Non-terminal and X is combination of Terminals and Non-terminals.
 
 ## TODO
 
