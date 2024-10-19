@@ -6,7 +6,7 @@ CFG-Parser is a C program to parse strings based on a Context-Free Grammar. The 
 
 As of now the source code is not dependent on any POSIX library or headers. 
 
-### For Windows like OS
+### For Windows
 ```bash
 gcc src\parser.c -o parser
 ```
