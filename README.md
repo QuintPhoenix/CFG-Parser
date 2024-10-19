@@ -1,6 +1,6 @@
 # CFG-Parser
 
-CFG-Parser is a C program to parse strings based on a Context-Free Grammar. The programme outputs the acceptability of the input string by the CFG. It works using top-down parsing and uses DFS to explore all possible derivations from staring non-terminal
+CFG-Parser is a C program to parse strings based on a Context-Free Grammar. The program outputs the acceptability of the input string by the CFG. It works using top-down parsing and uses DFS to explore all possible derivations from staring non-terminal
 
 ## Building
 
@@ -28,7 +28,7 @@ to discuss what you would like to change.
 
 ## Issues
 
-A very limited number of CFGs have been tested till now. Hence, the programme is highly susceptible to crashing or reporting incorred result.
+A very limited number of CFGs have been tested till now. Hence, the program is highly susceptible to crashing or reporting incorred result.
 
 ## Limitations
 
@@ -36,7 +36,7 @@ Terminals should be any lowercase character except 'e' as it is reserved for emp
 
 ## TODO
 
-- [ ] Add threading functionality to speedup the programme
+- [ ] Add threading functionality to speedup the program
 - [ ] Make source code more readable
 - [ ] Add feature to print the derivation
 - [ ] Add feature to accept a string as terminal or non-terminal
